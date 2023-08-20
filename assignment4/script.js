@@ -13,3 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
+    const currentDate = new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+
+    document.getElementById("current-year").textContent = currentYear;
+    document.getElementById("current-date").textContent = currentDate;
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+});

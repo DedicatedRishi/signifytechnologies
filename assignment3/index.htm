@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Designing a Responsive Portfolio</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .passport-photo {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            background-color: #444;
+            padding: 0.5rem 0;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        main {
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem;
+            flex-basis: calc(33.33% - 2rem);
+            box-sizing: border-box;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <img src="./images/photorishi.jpeg" alt="My Passport Photo" class="passport-photo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.htm">Home</a></li>
+            <li><a href="./about.htm">About</a></li>
+            <li><a href="./contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="project">
+            <a href="https://weatherapibyrishi.vercel.app/" target="_blank">
+                <img src="./images/weatherapp.png" alt="Project 1">
+                <h2>Weather App</h2>
+                <p>Its an interface which provides the weather details by accessing location</p>
+            </a>
+        </section>
+        <section class="project">
+            <a href="https://netflixhomepagebyrishi.vercel.app/" target="_blank">
+                <img src="./images/netflx.png" alt="Project 2">
+                <h2>Home Page Of Netflix</h2>
+                <p>This is an clone of the netflix homepage</p>
+            </a>
+        </section>
+      
+    </main>
+    <footer>
+        <p>&copy; 2023 Signify Technologies</p>
+    </footer>
+</body>
+</html>
